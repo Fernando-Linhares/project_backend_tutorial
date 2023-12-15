@@ -17,4 +17,5 @@ For run a server development
 
 ### Verification
 
-        /app
+Route Verification:
+        GET | /app
