@@ -1,0 +1,20 @@
+version: '3.9'
+services:
+  web:
+    image: node:18-alpine
+    container_name: 'web'
+    volumes:
+      - '.:/app'
+    working_dir: '/app'
+    ports:
+      - '3000:3000'
+    command: ["npm", "start"]
+    depends_on:
+      - db
+  db:
+    container_name: db
+    image: mongo:4.0.4
+    restart: always
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=user
+      - MONGO_INITDB_ROOT_PASSWORD=password
