@@ -2,7 +2,7 @@
 
 ### Overview
 
-This is a application just for begginers in backend application, we'r coding using nodejs, docker, express, mongodb and more libs related this environment
+This is a application just for begginers in backend application, we're coding using nodejs, docker, express, mongodb and more libs related this environment
 
 
 ### Usage
